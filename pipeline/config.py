@@ -23,9 +23,10 @@ SOURCES = {
 }
 
 # How many days back every daily run recomputes gold_feature_daily.
-# Events are produced by our own apps and reach Kafka within seconds, so each
-# run only needs to recompute its own day.
-LOOKBACK_DAYS = 0
+# Measured, not guessed: `python main.py --lateness` over Bronze gives
+# P99(_ingested_at - event_time) = 3.00 days (offline mobile clients, e.g. u05),
+# so lookback = ceil(P99) = 3. Re-measure when traffic changes.
+LOOKBACK_DAYS = 3
 
 EMBEDDING_MODEL_VERSION = "hash-embed-v1"
 CHUNK_WORDS = 40
