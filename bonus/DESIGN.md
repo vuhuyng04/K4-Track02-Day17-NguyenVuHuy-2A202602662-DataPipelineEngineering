@@ -1,8 +1,5 @@
 # Bonus B2 — Thiết kế: pipeline RAG cho hồ sơ bệnh án PDF tiếng Việt
 
-> Bản nháp brainstorm. Các quyết định dưới đây là phán đoán cá nhân; cần đọc lại và
-> chỉnh theo bối cảnh thực tế trước khi coi là thiết kế cuối.
-
 ## 1. Bài toán và ràng buộc
 
 Một chuỗi phòng khám tư (≈ 15 cơ sở) muốn một trợ lý cho bác sĩ: hỏi
