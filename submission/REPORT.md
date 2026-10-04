@@ -5,7 +5,7 @@ Phần phân tích tối đa một trang, không tính output ở phần 5.
 
 **Họ tên / MSSV:** Nguyễn Vũ Huy / 2A202602662
 **Repo:** https://github.com/vuhuyng04/K4-Track02-Day17-NguyenVuHuy-2A202602662-DataPipelineEngineering
-**Commit bài nộp:** HEAD của nhánh `main` lúc nộp (ba commit sửa lỗi: `ea6e95b`, `d17d9e7`, `28ddcc3`)
+**Commit bài nộp:** HEAD của nhánh `main` lúc nộp (ba commit sửa lỗi: `eacee7e`, `784d30c`, `9ae38e5`)
 **AI đã dùng và phạm vi hỗ trợ (hoặc không dùng):** Claude Code (Anthropic) — đọc code, chỉ ra vị trí 3 lỗi, đề xuất và viết bản sửa, viết bước cache LLM (B1), soạn DESIGN.md (B2), chạy các lệnh kiểm tra. Tôi đã review từng thay đổi và tự chạy lại toàn bộ kiểm tra; output bên dưới sinh từ code trong repo.
 **Nguồn tham khảo khác (nếu có):** slide Ngày 17; tài liệu Debezium (định dạng event Postgres), dbt docs (incremental merge, microbatch).
 
