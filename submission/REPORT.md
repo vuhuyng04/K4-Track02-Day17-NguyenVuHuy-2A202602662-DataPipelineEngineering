@@ -141,4 +141,11 @@ Cache key = `sha256(subject. body)` + model + prompt version (bảng `llm_label_
 ### Bonus B2
 
 - Brainstorm: [`bonus/DESIGN.md`](../bonus/DESIGN.md).
-- Airflow 3: bằng chứng trong [`bonus/airflow/`](../bonus/airflow/).
+- Airflow 3: bằng chứng trong [`bonus/airflow/`](../bonus/airflow/) — ảnh 7 run backfill
+  (08-10 → 08-16) đều Success, ảnh backfill, log `backfill create` và checksum.
+
+```text
+$ docker compose -f docker/docker-compose.yml exec -w /opt/airflow/dags airflow python -c "...gold_checksums..."
+{'gold_feature_daily': '8630e04a61d10aa963b7a49e148926b0', 'gold_training_set': '9370ca77af233dfc2640e8cb61ef12d1', 'gold_doc_chunks': 'cb9ebd12fdccafa4b746141147471964', 'gold': '39e115c510ecdf526800eac227158a4f'}
+```
+Gold checksum của Airflow = checksum fresh build `39e115c510ecdf526800eac227158a4f`.

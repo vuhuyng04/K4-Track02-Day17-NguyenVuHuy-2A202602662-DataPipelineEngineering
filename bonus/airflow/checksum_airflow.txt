@@ -1,0 +1,1 @@
+﻿{'gold_feature_daily': '8630e04a61d10aa963b7a49e148926b0', 'gold_training_set': '9370ca77af233dfc2640e8cb61ef12d1', 'gold_doc_chunks': 'cb9ebd12fdccafa4b746141147471964', 'gold': '39e115c510ecdf526800eac227158a4f'}
